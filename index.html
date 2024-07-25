@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+    <title>Document</title>
+</head>
+<style>
+    .remove-options {
+       border: solid 4px black;
+       width: 200px;
+       height: 200px;
+    }
+    .remove-button{
+        background-color: red;
+        border-radius: 3px;
+        border: none;
+
+    }
+    .changeColour{
+        border: solid 4px black;
+       width: 200px;
+       height: 200px;
+    }
+    .container{
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+    }
+    .changeColour  button{
+        background-color: green;
+    }
+</style>
+<body>
+    <div class="container">
+
+        <div class="remove-options">
+            <select id="colorSelection">
+                <option>Red</option>
+                <option>Green</option>
+                <option>White</option>
+                <option>Black</option>
+            </select>
+            <button id="remove-button" class="remove-button">remove Options</button>
+        </div>
+        
+        <div class="changeColour">
+            
+            <select id="colorSelect">
+                <option>Red</option>
+                <option>Green</option>
+                <option>White</option>
+                <option>Black</option>
+            </select>
+            <button id="colorPickBtn">change Color </button>
+            <p id="changeParaColour">”sample test….” </p>
+        </div>
+        
+       <div id="input">
+
+           <form id="form1">
+               First name: <input type="text" name="fname" value="David"><br>
+               Last name: <input type="text" name="lname" value="Beckham"><br>
+               <input type="submit" value="Submit">
+            </form>
+        </div>
+
+    </div>
+
+
+
+        <script src="./javascript.js"></script>
+    </body>
+    </html>
